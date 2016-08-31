@@ -1,0 +1,26 @@
+@font-face {
+    font-family: andale; 
+    src: url(../assets/andale-mono.tff);
+}
+
+* {
+	font-family: andale;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+nav li + li:before{
+    content: " | ";
+    padding: 0 10px;
+}
+
+nav ul {
+	height: 34px;
+	font-size: 30px;
+}
