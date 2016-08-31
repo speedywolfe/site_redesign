@@ -1,7 +1,15 @@
+/*---------------------------------------------*/
+/* Globals */
+/*---------------------------------------------*/
+
 @font-face {
-    font-family: andale; 
-    src: url(../assets/andale-mono.tff);
+    font-family: 'andale'; 
+    src: url(../assets/andale-mono.ttf);
 }
+
+/*---------------------------------------------*/
+/* Overarching styles */
+/*---------------------------------------------*/ 
 
 * {
 	font-family: andale;
@@ -15,12 +23,61 @@ body {
 	width: 960px;
 }
 
-nav li + li:before{
-    content: " | ";
-    padding: 0 10px;
+.spacer {
+	@extend .parent;
+	margin: 20px 0px 20px;
 }
 
+/*---------------------------------------------*/
+/* Extenders */
+/*---------------------------------------------*/
+
+.parent {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	align-items: center;
+	-webkit-align-items: center;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+/*---------------------------------------------*/
+/* Navigation */
+/*---------------------------------------------*/
 nav ul {
+	@extend .parent;
 	height: 34px;
-	font-size: 30px;
+	font-size: 24px;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	text-decoration: line-through;
+}
+
+nav li + li:before{
+    content: " | ";
+    padding: 0 20px;
+}
+
+/*---------------------------------------------*/
+/* footer */
+/*---------------------------------------------*/
+footer {
+	@extend .parent;
+}
+footer ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+footer a {
+	// text-decoration: none;
 }
