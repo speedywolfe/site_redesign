@@ -3,7 +3,7 @@
 /*---------------------------------------------*/
 @font-face {
   font-family: 'andale';
-  src: url(../assets/andale-mono.ttf); }
+  src: url("../assets/andale-mono.ttf"); }
 /*---------------------------------------------*/
 /* Overarching styles */
 /*---------------------------------------------*/
@@ -20,10 +20,17 @@ body {
 .spacer {
   margin: 20px 0px 20px; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  text-decoration: line-through; }
+
 /*---------------------------------------------*/
 /* Extenders */
 /*---------------------------------------------*/
-.parent, .spacer, nav ul, footer {
+.flex_space, .spacer, nav ul, .project-repeat-middle, .image_grid, footer ul {
   display: flex;
   display: -webkit-flex;
   justify-content: space-around;
@@ -33,28 +40,75 @@ body {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap; }
 
+.flex_end, .project-repeat-bottom {
+  display: flex;
+  justify-content: flex-end; }
+
 /*---------------------------------------------*/
 /* Navigation */
 /*---------------------------------------------*/
+#logo-holder-left {
+  position: fixed;
+  left: 15px;
+  top: 10px; }
+
 nav ul {
   height: 34px;
   font-size: 24px;
   list-style: none; }
-
-nav a {
-  text-decoration: none;
-  color: black; }
-
-nav a:hover {
-  text-decoration: line-through; }
 
 nav li + li:before {
   content: " | ";
   padding: 0 20px; }
 
 /*---------------------------------------------*/
+/* Overview Pages */
+/*---------------------------------------------*/
+.overview-holder {
+  margin-top: 30px;
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  font-size: 24px; }
+
+.project-repeat-top {
+  width: 100%;
+  height: 30px; }
+
+.project-repeat-middle {
+  width: 100%;
+  height: 260px; }
+
+.project-repeat-bottom {
+  width: 100%;
+  height: 30px; }
+
+.preview_image {
+  height: 230px; }
+
+.whole_project_show {
+  padding: auto 10px auto auto; }
+
+/*---------------------------------------------*/
+/* Main Content View Page */
+/*---------------------------------------------*/
+.grid_image {
+  width: 400px;
+  padding: 20px; }
+
+/*---------------------------------------------*/
 /* footer */
 /*---------------------------------------------*/
+footer {
+  margin-top: 30px; }
+
 footer ul {
+  width: 30%;
+  float: left;
   list-style: none;
   text-decoration: none; }
+
+footer li {
+  margin-right: 5px; }
+
+#copyright {
+  float: right; }

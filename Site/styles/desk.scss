@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'andale'; 
-    src: url(../assets/andale-mono.ttf);
+    src: url('../assets/andale-mono.ttf');
 }
 
 /*---------------------------------------------*/
@@ -24,15 +24,24 @@ body {
 }
 
 .spacer {
-	@extend .parent;
+	@extend .flex_space;
 	margin: 20px 0px 20px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: line-through;
 }
 
 /*---------------------------------------------*/
 /* Extenders */
 /*---------------------------------------------*/
 
-.parent {
+.flex_space {
 	display: flex;
 	display: -webkit-flex;
 	justify-content: space-around;
@@ -43,23 +52,25 @@ body {
 	-webkit-flex-wrap: wrap;
 }
 
+.flex_end {
+	display: flex;
+	justify-content: flex-end;
+}
+
 /*---------------------------------------------*/
 /* Navigation */
 /*---------------------------------------------*/
+#logo-holder-left {
+	position: fixed;
+	left: 15px;
+	top: 10px;
+}
+
 nav ul {
-	@extend .parent;
+	@extend .flex_space;
 	height: 34px;
 	font-size: 24px;
 	list-style: none;
-}
-
-nav a {
-	text-decoration: none;
-	color: black;
-}
-
-nav a:hover {
-	text-decoration: line-through;
 }
 
 nav li + li:before{
@@ -68,16 +79,71 @@ nav li + li:before{
 }
 
 /*---------------------------------------------*/
+/* Overview Pages */
+/*---------------------------------------------*/
+.overview-holder {
+	margin-top: 30px;
+	padding-bottom: 15px; 
+	border-bottom-style: solid;
+	font-size: 24px;
+}
+
+.project-repeat-top {
+	width: 100%;
+	height: 30px;
+}
+
+.project-repeat-middle {
+	@extend .flex_space;
+	width: 100%;
+	height: 260px;
+}
+
+.project-repeat-bottom {
+	@extend .flex_end;
+	width: 100%;
+	height: 30px;
+}
+
+.preview_image {
+	height: 230px;
+}
+
+.whole_project_show {
+	padding: auto 10px auto auto;	
+}
+
+/*---------------------------------------------*/
+/* Main Content View Page */
+/*---------------------------------------------*/
+.image_grid {
+	@extend .flex_space;
+}
+
+.grid_image {
+	width: 400px;
+	padding: 20px;
+}
+
+/*---------------------------------------------*/
 /* footer */
 /*---------------------------------------------*/
 footer {
-	@extend .parent;
+	margin-top: 30px;
 }
 footer ul {
+	@extend .flex_space;
+	width: 30%;
+	float: left;
 	list-style: none;
 	text-decoration: none;
 }
 
-footer a {
-	// text-decoration: none;
+footer li {
+	margin-right: 5px;
 }
+
+#copyright {
+	float: right;
+}
+

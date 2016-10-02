@@ -176,6 +176,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/Site\/images\/square1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 385196,
+		"inputAbbreviatedPath": "\/Site\/images\/square1.jpg",
+		"outputAbbreviatedPath": "\/Site\/images\/square1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Site\/images\/square2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 349082,
+		"inputAbbreviatedPath": "\/Site\/images\/square2.jpg",
+		"outputAbbreviatedPath": "\/Site\/images\/square2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Site\/images\/square3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 397269,
+		"inputAbbreviatedPath": "\/Site\/images\/square3.jpg",
+		"outputAbbreviatedPath": "\/Site\/images\/square3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Site\/images\/square4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 315661,
+		"inputAbbreviatedPath": "\/Site\/images\/square4.jpg",
+		"outputAbbreviatedPath": "\/Site\/images\/square4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/Site\/images\/start.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -195,6 +239,53 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/Site\/pages\/daily-overview.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Site\/pages\/daily-overview.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Site\/pages\/daily.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Site\/pages\/daily.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Site\/pages\/photography-overview.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Site\/pages\/photography-overview.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Site\/pages\/photography-proj.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Site\/pages\/photography-proj.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Site\/sftp-config.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Site\/sftp-config.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/Site\/sftp-config-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
 		},
 	"\/Site\/styles\/desk.scss": {
 		"createSourceMap": 0,
